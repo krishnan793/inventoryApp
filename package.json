@@ -1,0 +1,18 @@
+{
+  "name": "inventory",
+  "main": "index.html",
+  "version":"1.0",
+  "window": {
+    "title": "Inventory",
+    "icon": "images/icon-package.png",
+    "toolbar": true,
+    "frame": true,
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600
+  }
+}

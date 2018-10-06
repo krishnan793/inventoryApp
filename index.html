@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>
+		inventory
+	</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<script src="js/jquery-3.3.1.slim.min.js" ></script>
+	<script src="js/popper.min.js" ></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/css.css">
+	<script src="js/js.js"></script>
+</head>
+<body onload="loadData()">
+	<div class="navButton">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav('navMenu')">&#9776;</span>
+	</div>
+
+	<div id="navMenu" class="menu row align-items-center">
+		<div class="midForm col-lg-offset-1">
+			<!-- <button type="button" class="btn btn-primary button" onclick="showMenu('confMenu','navMenu')">Config</button></br> -->
+			<button type="button" class="btn btn-primary button" onclick="showMenu('aboutMenu','navMenu')">About</button>
+		</div>
+	</div>
+
+	<div id="aboutMenu" class="menu row align-items-center">
+		<div class="midForm col-lg-offset-1">
+			<div class="row">
+				<div class="col-md-6 img">
+					<img src="images/user.png"  alt="" class="img">
+				</div>
+				<div class="col-md-6 details">
+					<blockquote>
+						<h5>Ananthakrishnan U S</h5>
+						<small><cite title="Source Title">India  <i class="icon-map-marker"></i></cite></small>
+					</blockquote>
+					<p>
+						krishnan793@gmail.com <br>
+						eionix.blogspot.in <br>
+						github.com/krishnan793 <br>
+					</p>
+				</div>
+			</div>
+		</div>
+</div>
+		<div class="container-fluid mainContainer" id="mainBody">
+			<div class="mx-auto" style="width: 60%;">
+				<form>
+					<div class="form-row">
+						<div class="col-11">
+							<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="component name" placeholder="Enter inventory to search" onkeyup="searchInventory(this)">
+						</div>
+						<div class="col-1">
+							<img src="images/icon.png" width="34px" data-toggle="modal" data-target="#exampleModal" onclick="resetDetailsForUpdate();">
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="mx-auto" style="width: 95%;">
+				<div class="tableContainer" style="overflow-y: scroll;overflow-x: hidden;">
+					<table class="table table-hover table-bordered" id="tableInventory">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Name</th>
+								<th scope="col">Value</th>
+								<th scope="col">Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Add inventory</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-row" id="dataFrom">
+									<div class="col-7">
+										<input id="dataFromName" type="text" class="form-control" placeholder="Name">
+									</div>
+									<div class="col">
+										<input id="dataFromValue" type="text" class="form-control" placeholder="Value">
+									</div>
+									<div class="col">
+										<input id="dataFromQty" type="text" class="form-control" placeholder="Quantity">
+										<input id="dataFromindex" type="hidden" class="form-control" value="-1">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">							
+							<button type="button" class="btn btn-primary" onclick="saveData();">Save changes</button>
+							<button type="button" class="btn btn-danger" onclick="deleteData();">Delete entry</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>

@@ -1,0 +1,81 @@
+.mainContainer{
+	padding-top:20px;
+}
+
+.tableContainer{
+	margin-top: 50px;
+	border-style: groove;
+	border-color: bisque;
+}
+.navButton{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	margin-left: 10px;
+	z-index: 100;
+}
+.midForm{
+	overflow: hidden;
+/*	width: 110px;
+	height: 100px;*/
+	margin: auto;
+	/*position: fixed;*/
+/*	left: 50%;
+margin-left: -100px;*/
+}
+#navMenu{
+	
+}
+.menu{
+	width: 0%;
+	transition: 0.5s;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+    background-color: white;
+}
+.button{
+	width: 100px;
+	margin: 5px;
+}
+#mainBody{
+	transition: all .5s;
+	/*transition: 0.5s;*/
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.img{
+    text-align:center;
+}
+.details{
+    border-left:3px solid #ded4da;
+    padding-right: 90px;
+}
+.details p{
+    font-size:15px;
+    font-weight:bold;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

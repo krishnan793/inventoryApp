@@ -1,0 +1,6 @@
+build/
+linux/
+windows/
+inventory.sublime-project
+inventory.sublime-workspace
+data
