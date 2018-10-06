@@ -3,13 +3,15 @@ A GUI app for keep track of hobby electronics components. It is build with nwjs 
 
 ## Installation steps
 
-Chose the build you want (windows/linux).
+Choose the build you want (https://github.com/krishnan793/inventoryApp/tree/master/build).
 
 ```
 cd ~/
-wget https://raw.githubusercontent.com/krishnan793/inventoryApp/master/build/<windows/linux>
-chmod +x inventoryApp/inventoryApp
-./inventoryApp/inventoryApp
+wget https://raw.githubusercontent.com/krishnan793/inventoryApp/master/build/inventoryApp_linux_x64.zip
+unzip inventoryApp_linux_x64.zip
+cd inventoryApp_linux_x64
+chmod +x inventoryApp
+./inventoryApp
 ```
 or
 
@@ -21,6 +23,10 @@ You can also clone the entrire repository using
 git clone https://github.com/krishnan793/inventoryApp.git
 /path/to/nw /path/to/inventoryApp
 ```
+Edit inventory.desktop and change Icon location to reflect the icon
+
+Icon=/path/to/inventoryApp/icon/icon-package.png
+
 Open for suggestions to improve.
 
 ## Preview
