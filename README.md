@@ -1,5 +1,5 @@
 # inventoryApp
-A GUI app for keep track of hobby electronics components. It is build with nwjs framework. You can find binaries under build folder.
+A GUI app for keep track of hobby electronics components. It is build with nwjs framework. You can find binaries under build folder. For more info (https://www.eionix.co.in/2018/10/06/inventory-app-for-hobbyists.html)
 
 ## Installation steps
 
